@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.CustomerViewInfoController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0">
+            <children>
+                  <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Edit Customer Information" />
+                  
+                        <HBox alignment="CENTER" prefHeight="203.0" prefWidth="560.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="129.0">
+                     <children>
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #34495e;" text="Username:" />
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #34495e;" text="Date of Birth:" />
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #34495e;" text="Gender:" />
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #34495e;" text="Address:" />
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #34495e;" text="Interests:" />
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #34495e;" text="Balance:" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="203.0" prefWidth="200.0" spacing="2.0">
+                     <children>
+                                <TextField fx:id="username_text" style="-fx-background-radius: 50 50 50 50;" />
+                                <TextField fx:id="dob_text" style="-fx-background-radius: 50 50 50 50;" />
+                                <ChoiceBox fx:id="gender_ChoiceBox" prefWidth="200.0" style="-fx-background-radius: 50 50 50 50;" />
+                                <TextField fx:id="address_text" style="-fx-background-radius: 50 50 50 50;" />
+                                <TextField fx:id="interests_text" style="-fx-background-radius: 50 50 50 50;" />
+                        <TextField fx:id="balance_text" layoutX="10.0" layoutY="153.0" style="-fx-background-radius: 50 50 50 50;" />
+                     </children>
+                  </VBox>
+               </children>
+                  </HBox>
+                    <Button fx:id="Update_button" mnemonicParsing="false" onAction="#updateInfo" prefWidth="160.0" style="-fx-background-color: #999999; -fx-background-radius: 50 50 50 50;" text="Update">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

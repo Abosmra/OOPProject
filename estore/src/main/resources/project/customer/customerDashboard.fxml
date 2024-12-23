@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" focusTraversable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="870.0" prefWidth="1270.0" style="-fx-background-color: #f4f4fc;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.CustomerDashboardController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="705.0" prefWidth="175.0" spacing="20.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="ProductsButton" alignment="CENTER" onMouseClicked="#showDashboardPage" prefHeight="55.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/products.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Products Page">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+
+            <HBox fx:id="CartButton" alignment="CENTER" onMouseClicked="#showCartPage" prefHeight="55.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/cart.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Cart">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+
+            <HBox fx:id="infoButton" alignment="CENTER" onMouseClicked="#showInfoPage" prefHeight="55.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/vwinfo.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="View Info">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+
+            <HBox fx:id="logoutButton" alignment="CENTER" onMouseClicked="#logout" prefHeight="55.0" prefWidth="218.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Logout">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <!-- Default center content will be loaded dynamically -->
+   </center>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="140.0" prefWidth="1270.0" style="-fx-background-color: #dddddd;" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <ImageView fitHeight="175.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/storeicon.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="171.0" prefWidth="971.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="449.0" text="Welcome to the">
+                     <font>
+                        <Font name="SansSerif Regular" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="84.0" prefWidth="831.0" text="OOPStore">
+                     <font>
+                        <Font name="SansSerif Bold" size="96.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

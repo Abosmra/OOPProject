@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" prefHeight="870.0" prefWidth="1270.0" style="-fx-background-color: #f4f4fc;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.AdminDashboardController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="869.0" prefWidth="235.0" spacing="20.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+
+            <HBox fx:id="productManagementButton" alignment="CENTER" onMouseClicked="#showAddProductPage" prefHeight="55.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/prdctmngmnt.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Product Management">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+
+            <HBox fx:id="userManagementButton" alignment="CENTER" onMouseClicked="#showUserManagementPage" prefHeight="55.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/usrmngmnt.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="User Management">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+
+            <HBox fx:id="orderManagementButton" alignment="CENTER" onMouseClicked="#showOrderManagementPage" prefHeight="55.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/ordrmngmnt.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Order Management">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+
+            <HBox fx:id="infoButton" alignment="CENTER" onMouseClicked="#showInfoPage" prefHeight="55.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/vwinfo.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="View Info">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+
+            <HBox fx:id="logoutButton" alignment="CENTER" onMouseClicked="#logout" prefHeight="55.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Logout">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <!-- Content dynamically loaded here -->
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="55.0" prefWidth="1079.0" spacing="10.0" style="-fx-background-color: #dddddd;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/admin.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="42.0" prefWidth="167.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Admin Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
